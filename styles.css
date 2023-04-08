@@ -1,0 +1,260 @@
+html,
+body {
+  background: linear-gradient(90deg, rgb(150, 150, 200), rgb(70, 70, 190));
+}
+.balls {
+  width: 400px;
+  height: 400px;
+  border: 10px solid gray;
+  margin: 200px auto;
+  box-shadow: -10px -10px 10px rgb(56, 51, 51);
+}
+.ball {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+}
+.ball1 {
+  background: linear-gradient(90deg, rgb(250, 150, 155), rgb(250, 70, 75));
+  left: 180px;
+  animation: ball1 3s linear infinite;
+}
+.ball2 {
+  background: linear-gradient(90deg, rgb(150, 155, 250), rgb(70, 75, 250));
+  top: 108px;
+  animation: ball2 3s linear infinite;
+}
+.ball3 {
+  background: linear-gradient(90deg, rgb(150, 250, 155), rgb(150, 250, 155));
+  top: 250px;
+  left: 180px;
+  animation: ball3 3s linear infinite;
+}
+.ball4 {
+  background: linear-gradient(90deg, rgb(117, 103, 112), rgb(137, 31, 104));
+  left: 350px;
+  animation: ball4 3s linear infinite;
+}
+
+@keyframes ball1 {
+  0% {
+    transform: translate3d(0px, 0, 0);
+    width: 50px;
+  }
+  50% {
+    transform: translate3d(0, 130px, 0);
+    height: 50px;
+    width: 50px;
+  }
+
+  51% {
+    transform: translate3d(0, 130px, 0);
+    height: 45px;
+    width: 45px;
+  }
+  /* 56% {
+    transform: translate3d(0, 130px, 0);
+    height: 50px;
+  } */
+  98% {
+    transform: translate3d(0, 0px, 0);
+    width: 50px;
+  }
+
+  100% {
+    transform: translate3d(0, 0px, 0);
+    width: 60px;
+  }
+}
+@keyframes ball2 {
+  0% {
+    transform: translate3d(0px, 0, 0);
+    width: 50px;
+  }
+  50% {
+    transform: translate3d(140px, 0px, 0);
+    width: 50px;
+    height: 50px;
+  }
+  51% {
+    transform: translate3d(140px, 0px, 0);
+    width: 45px;
+    height: 45px;
+  }
+  /* 56% {
+    transform: translate3d(140px, 0px, 0);
+    width: 50px;
+  } */
+  98% {
+    transform: translate3d(0px, 0px, 0);
+    width: 50px;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0);
+    width: 60px;
+  }
+}
+@keyframes ball3 {
+  0% {
+    transform: translate3d(0px, 0, 0);
+    width: 50px;
+  }
+  50% {
+    transform: translate3d(0, -160px, 0);
+    height: 50px;
+    width: 50px;
+  }
+
+  51% {
+    transform: translate3d(0, -160px, 0);
+    height: 45px;
+    height: 45px;
+  }
+  /* 56% {
+    transform: translate3d(0, -160px, 0);
+    height: 50px;
+  } */
+  98% {
+    transform: translate3d(0, 0px, 0);
+    width: 50px;
+  }
+  100% {
+    transform: translate3d(0, 0px, 0);
+    width: 60px;
+  }
+}
+@keyframes ball4 {
+  0% {
+    transform: translate3d(0px, 0, 0);
+    width: 50px;
+  }
+  50% {
+    transform: translate3d(-126px, 0, 0);
+    width: 50px;
+    height: 50px;
+  }
+  51% {
+    transform: translate3d(-126px, 15px, 0);
+    width: 45px;
+    height: 45px;
+  }
+
+  /* 56% {
+    transform: translate3d(-130px, 0px, 0);
+    width: 50px;
+  } */
+  98% {
+    transform: translate3d(0px, 0, 0);
+    width: 50px;
+  }
+  100% {
+    transform: translate3d(0px, 0, 0);
+    width: 60px;
+  }
+}
+
+/* .ball {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(90deg, rgb(170, 170, 250), rgb(50, 50, 255));
+  margin: auto;
+  border-radius: 50%;
+
+  position: absolute;
+}
+.ball:nth-of-type(1) {
+  left: 400px;
+  animation-name: ball1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.ball:nth-of-type(2) {
+  left: 300px;
+  top: 100px;
+  animation-name: ball2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.ball:nth-of-type(3) {
+  left: 400px;
+  top: 200px;
+  animation-name: ball3;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.ball:nth-of-type(4) {
+  left: 500px;
+  top: 100px;
+}
+
+@keyframes ball1 {
+  0% {
+    transform: translate3d(0, 10px, 10px);
+    width: 70px;
+  }
+  45% {
+    transform: translate3d(0, 100px, 50px);
+    width: 50px;
+  }
+  50% {
+    transform: translate3d(0, 100px, 50px);
+    width: 70px;
+  }
+  95% {
+    transform: translate3d(0, 10px, 10px);
+    width: 50px;
+  }
+  100% {
+    transform: translate3d(0, 10px, 10px);
+    width: 70px;
+  }
+}
+
+@keyframes ball2 {
+  0% {
+    transform: translate3d(0, 50px, 10px);
+    width: 70px;
+  }
+  45% {
+    transform: translate3d(100px, 50px, 50px);
+    width: 50px;
+  }
+  50% {
+    transform: translate3d(100px, 50px, 50px);
+    width: 70px;
+  }
+  95% {
+    transform: translate3d(0, 50px, 10px);
+    width: 50px;
+  }
+  100% {
+    transform: translate3d(0, 50px, 10px);
+    width: 70px;
+  }
+}
+@keyframes ball3 {
+  0% {
+    transform: translate3d(100px, 100px, 10px);
+    width: 70px;
+  }
+  45% {
+    transform: translate3d(100px, 200px, 50px);
+    width: 50px;
+  }
+  50% {
+    transform: translate3d(100px, 200px, 50px);
+    width: 70px;
+  }
+  95% {
+    transform: translate3d(100px, 100px, 10px);
+    width: 50px;
+  }
+  100% {
+    transform: translate3d(100px, 100px, 10px);
+    width: 70px;
+  }
+} */
